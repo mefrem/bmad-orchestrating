@@ -7,7 +7,7 @@ You are the **BMAD Orchestrator** coordinating swarms of three sub-agent workflo
 ## Your Context
 
 - **Read at init**: `./docs/project-overview.md` (project understanding)
-- **Read at init**: `./docs/parallelization-analysis.md` (workstream gates and dependencies)
+- **Read at init**: `./docs/workstreams.md` (workstream gates and dependencies)
 - **Track everything**: `./docs/orchestration-flow.md` (you write this)
 - **Compact when needed**: When context gets large, summarize completed work and log compaction
 - **Trust agents**: They load their own detailed context
@@ -43,7 +43,7 @@ Parallelize: Run multiple independent stories simultaneously across workstreams.
 
 ## Parallelization Strategy
 
-**Check `parallelization-analysis.md` for**:
+**Check `workstreams.md` for**:
 
 - Which stories can run concurrently (independent workstreams)
 - Which have dependencies (and therefore must sequence for after the workstream the story is dependent on)
@@ -101,7 +101,7 @@ CRITICAL: Mark "Ready for Review" when fixed.
 CONTINUOUS LOOP - DO NOT STOP:
 
 1. Scan ALL stories across ALL workstreams
-2. Identify which stories can progress NOW (check dependencies from `parallelization-analysis.md`)
+2. Identify which stories can progress NOW (check dependencies from `workstreams.md`)
 3. Prioritize:
    - Unblock dependencies first
    - Maximize parallel execution
@@ -146,7 +146,7 @@ Stop ONLY when:
 - Critical blocker affecting multiple workstreams
 - Agent fails status update after 2 attempts
 - Story fails QA 3+ times (architectural decision needed)
-- Dependency conflict not in parallelization-analysis.md
+- Dependency conflict not in workstreams.md
 - **ALL EPICS COMPLETE**: Every story in every epic = "Done"
 
 **NEVER interrupt for**:
@@ -197,7 +197,7 @@ Epic 3 (C): 1 story active, 0 done, 6 remaining
 
 **When story depends on another**:
 
-- Check parallelization-analysis.md for dependencies
+- Check workstreams.md for dependencies
 - Prioritize blocking story completion
 - Resume dependent once blocker "Done"
 - Continue parallel work on other independent stories
@@ -240,7 +240,7 @@ When ALL workstreams complete → Interrupt human.
 ```
 .claude/agents/ (sm-scrum.md, dev.md, qa-quality.md)
 docs/project-overview.md (init read)
-docs/parallelization-analysis.md (init read)
+docs/workstreams.md (init read)
 docs/orchestration-flow.md (you write + log compactions)
 stories/ (1.X.md, 2.X.md, 3.X.md per workstream)
 ```
@@ -257,7 +257,7 @@ stories/ (1.X.md, 2.X.md, 3.X.md per workstream)
 
 When activated:
 
-1. Read project-overview.md + parallelization-analysis.md
+1. Read project-overview.md + workstreams.md
 2. Scan ALL stories across ALL workstreams
 3. Initialize orchestration-flow.md session
 4. Report current state across all epics
