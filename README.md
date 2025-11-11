@@ -6,7 +6,7 @@ Enter BMAX: automate the orchestration of your BMAD project's implementation pha
 
 ## QuickStart Checklist
 
-[ ] You must bring your own `/docs/prd.md` and `/docs/architecture.md` — invoke the `@analyst`, `@pm`, or `@architect` to create those docs. See [quickstart visual](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/src/modules/bmm/docs/quick-start.md#the-complete-flow-visualized)
+[] You must bring your own `/docs/prd.md` and `/docs/architecture.md` — invoke the `@analyst`, `@pm`, or `@architect` to create those docs. See [quickstart visual](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/src/modules/bmm/docs/quick-start.md#the-complete-flow-visualized)
 
 - Clone this repo: `git clone https://github.com/mefrem/BMAX.git <project_name>
   - Remove this repo from your git: `git remote remove origin`
