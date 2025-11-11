@@ -1,10 +1,12 @@
 # BMAX - Orchestrating BMAD
 
-Automating [BMAD!](https://github.com/bmad-code-org/BMAD-METHOD) BMAD is incredible—it automates the Agile development of software so you have more time to do other things, like focus on your user! However, BMAD's implementation phase requires manual oversight. What if we... automated it? Enter BMAX: automate the orchestration of your BMAD project's implementation phase. 
+Automating [BMAD!](https://github.com/bmad-code-org/BMAD-METHOD) BMAD is great. But what if we... automated it?
+
+Enter BMAX: automate the orchestration of your BMAD project's implementation phase. 
 
 ## QuickStart Checklist
 
-**This project assumes you already have a `prd.md` and an `architecture.md` created with the PM and Architect agents, respectively. See the [quickstart guide](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/src/modules/bmm/docs/quick-start.md#the-complete-flow-visualized) for the product development pipeline/flow. You could also type `/analyst` and start the whole process from scratch.**
+[ ] You must bring your own `/docs/prd.md` and `/docs/architecture.md` — invoke the `@analyst`, `@pm`, or `@architect` to create those docs. See [quickstart visual](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/src/modules/bmm/docs/quick-start.md#the-complete-flow-visualized)
 
 - Clone this repo: `git clone https://github.com/mefrem/BMAX.git <project_name>
   - Remove this repo from your git: `git remote remove origin`
