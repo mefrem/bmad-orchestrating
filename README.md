@@ -1,11 +1,13 @@
 # BMAX - Orchestrating BMAD
 
-Autonomous software development using Claude Code and the BMAD method for Agile software development with AI. 
+Automating [BMAD!](https://github.com/bmad-code-org/BMAD-METHOD) BMAD is incredible—it automates the Agile development of software so you have more time to do other things, like focus on your user! However, BMAD's implementation phase requires manual oversight. What if we... automated it? Enter BMAX: automate the orchestration of your BMAD project's implementation phase. 
 
 ## QuickStart Checklist
 
+**This project assumes you already have a `prd.md` and an `architecture.md` created with the PM and Architect agents, respectively. See the [quickstart guide](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/src/modules/bmm/docs/quick-start.md#the-complete-flow-visualized) for the product development pipeline/flow. You could also type `/analyst` and start the whole process from scratch.**
+
 - Clone this repo: `git clone https://github.com/mefrem/BMAX.git <project_name>
-  - Remove this repo from your git: `git remote remove origin` (so you can push your local project to your Github, not this repo)
+  - Remove this repo from your git: `git remote remove origin`
 - In terminal, start Claude with `--dangerously-skip-permissions` and paste the `orchestrator.md` contents to your main Claude Code chat.
   - That chat will invoke subagents as needed, and will continue for **1 entire Epic** by default. You can edit the prompt if you want to implement for X stories, or till 100% completion, etc.
 - Disregard "cowboy-mode.md" UNLESS you want to parallelize (in which case, see [cowboy-mode](##cowboy-mode)) (warning, experimental)
