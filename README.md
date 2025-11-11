@@ -6,13 +6,14 @@ Enter BMAX: automate the orchestration of your BMAD project's implementation pha
 
 ## QuickStart Checklist
 
-[] You must bring your own `/docs/prd.md` and `/docs/architecture.md` — invoke the `@analyst`, `@pm`, or `@architect` to create those docs. See [quickstart visual](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/src/modules/bmm/docs/quick-start.md#the-complete-flow-visualized)
-
-- Clone this repo: `git clone https://github.com/mefrem/BMAX.git <project_name>
+- [ ] Clone this repo: `git clone https://github.com/mefrem/BMAX.git <project_name>
   - Remove this repo from your git: `git remote remove origin`
-- In terminal, start Claude with `--dangerously-skip-permissions` and paste the `orchestrator.md` contents to your main Claude Code chat.
-  - That chat will invoke subagents as needed, and will continue for **1 entire Epic** by default. You can edit the prompt if you want to implement for X stories, or till 100% completion, etc.
-- Disregard "cowboy-mode.md" UNLESS you want to parallelize (in which case, see [cowboy-mode](##cowboy-mode)) (warning, experimental)
+- [ ] Start Claude, create `/docs/prd.md` and `/docs/architecture.md` by invoking the `@analyst`, `@pm`, or `@architect` to elicit those docs. 
+  - See [quickstart visual](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/src/modules/bmm/docs/quick-start.md#the-complete-flow-visualized)
+- [ ] To orchestrate, start Claude with `--dangerously-skip-permissions` and paste the `orchestrator.md` contents to your main Claude Code chat.
+  - That chat will invoke subagents as needed, and will continue for **1 entire Epic** by default. You can edit the prompt if you want to implement for X stories, till 100% completion, etc.
+
+Disregard "cowboy-mode.md" UNLESS you want to parallelize (in which case, see [cowboy-mode](##cowboy-mode)) (warning, experimental)
 
 ## What This Does
 
